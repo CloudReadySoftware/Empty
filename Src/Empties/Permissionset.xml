@@ -20,5 +20,15 @@
             <ExecutePermission>0</ExecutePermission>
             <SecurityFilter />
         </Permission>
+        <Permission>
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>86102</ObjectID> <!-- Empty Ledger Entry -->
+            <ReadPermission>1</ReadPermission>
+            <InsertPermission>1</InsertPermission>
+            <ModifyPermission>1</ModifyPermission>
+            <DeletePermission>1</DeletePermission>
+            <ExecutePermission>0</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
     </PermissionSet>
 </PermissionSets>

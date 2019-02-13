@@ -46,6 +46,15 @@ page 86100 "Empties"
                 ApplicationArea = All;
                 Scope = "Repeater";
             }
+            action("Ledger Entries")
+            {
+                caption = 'Ledger Entries';
+                Image = LedgerEntries;
+                RunObject = page "Empty Ledger Entries";
+                RunPageLink = "Empty Code" = field (Code);
+                ApplicationArea = All;
+                Scope = "Repeater";
+            }
         }
     }
 
