@@ -23,7 +23,7 @@ codeunit 86100 "GenerateDemoData"
 
     local procedure CreateEmpties()
     begin
-        CreateEmpty('Bottle20ml', 'Bottle 20 ml', 0.02);
+        CreateEmpty('Bottle20ml', 'Bottle 20 ml', 0);  // price 0 is not allowed
         CreateEmpty('Bottle33ml', 'Bottle 33 ml', 0.03);
         CreateEmpty('Bottle50ml', 'Bottle 50 ml', 0.04);
         createEmpty('Cont_24_20ml', 'Bottle Container 24x20ml', 1);
@@ -33,7 +33,7 @@ codeunit 86100 "GenerateDemoData"
 
     local procedure AttachItemsToEmpties()
     begin
-        AttachItemToEmpty('Cola20ml', 'Bottle20ml', 1);
+        AttachItemToEmpty('Cola20ml', 'Bottle20ml', 0); // Qty pr = 0 is not allowed
         AttachItemToEmpty('Cola33ml', 'Bottle33ml', 1);
         AttachItemToEmpty('Cola50ml', 'Bottle50ml', 1);
         AttachItemToEmpty('Sprite20ml', 'Bottle20ml', 1);
