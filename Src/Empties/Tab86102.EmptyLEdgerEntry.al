@@ -61,6 +61,7 @@ table 86102 "Empty Ledger Entry"
         {
             Clustered = true;
         }
+        key(Navigate; "Posting Date", "Sales Invoice No.") { }
     }
 
 }
