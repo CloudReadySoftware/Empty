@@ -16,23 +16,22 @@ page 86102 "Empty Ledger Entries"
         {
             repeater(Group)
             {
-
                 field("Entry No."; "Entry No.")
                 {
                     ApplicationArea = All;
                 }
-
-                field("Cust. Ledger Entry No."; "Cust. Ledger Entry No.")
+                field("Posting Date"; "Posting Date")
                 {
                     ApplicationArea = All;
                 }
-
+                field("Item Ledger Entry No."; "Item Ledger Entry No.")
+                {
+                    ApplicationArea = All;
+                }
                 field("Customer No."; "Customer No.")
                 {
                     ApplicationArea = All;
                 }
-
-
                 field("Empty Code"; "Empty Code")
                 {
                     ApplicationArea = All;
@@ -47,7 +46,14 @@ page 86102 "Empty Ledger Entries"
                 {
                     ApplicationArea = All;
                 }
-
+                field("Sales Invoice No."; "Sales Invoice No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Sales Invoice Line No."; "Sales Invoice Line No.")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

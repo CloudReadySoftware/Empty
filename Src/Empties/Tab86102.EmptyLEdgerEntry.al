@@ -10,32 +10,47 @@ table 86102 "Empty Ledger Entry"
             DataClassification = CustomerContent;
             AutoIncrement = true;
         }
-        field(2; "Cust. Ledger Entry No."; Integer)
+        field(2; "Posting Date"; Date)
+        {
+            Caption = 'Posting Date';
+            DataClassification = CustomerContent;
+        }
+        field(3; "Item Ledger Entry No."; Integer)
         {
             Caption = 'Cust. Ledger Entry No.';
             DataClassification = CustomerContent;
             TableRelation = "Cust. Ledger Entry"."Entry No.";
         }
-        field(3; "Customer No."; Code[50])
+        field(4; "Customer No."; Code[50])
         {
             Caption = 'Customer No.';
             DataClassification = CustomerContent;
             TableRelation = Customer."No.";
         }
-        field(4; "Empty Code"; code[20])
+        field(5; "Empty Code"; code[20])
         {
             Caption = 'Empty Code';
             DataClassification = CustomerContent;
             TableRelation = empty.Code;
         }
-        field(5; "Quantity"; Decimal)
+        field(6; "Quantity"; Decimal)
         {
             Caption = 'Quantity';
             DataClassification = CustomerContent;
         }
-        field(6; "Amount"; Decimal)
+        field(7; "Amount"; Decimal)
         {
             Caption = 'Amount';
+            DataClassification = CustomerContent;
+        }
+        field(8; "Sales Invoice No."; Code[20])
+        {
+            Caption = 'Sales Invoice No.';
+            DataClassification = CustomerContent;
+        }
+        field(9; "Sales Invoice Line No."; Integer)
+        {
+            Caption = 'Sales Invoice Line No.';
             DataClassification = CustomerContent;
         }
     }
