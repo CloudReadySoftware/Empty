@@ -17,9 +17,9 @@ table 86102 "Empty Ledger Entry"
         }
         field(3; "Item Ledger Entry No."; Integer)
         {
-            Caption = 'Cust. Ledger Entry No.';
+            Caption = 'Item Ledger Entry No.';
             DataClassification = CustomerContent;
-            TableRelation = "Cust. Ledger Entry"."Entry No.";
+            TableRelation = "Item Ledger Entry"."Entry No.";
         }
         field(4; "Customer No."; Code[50])
         {
